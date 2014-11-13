@@ -14,9 +14,10 @@ end
 get '/' do
 	erb :home
 end
+
 post '/weather' do
     post = params[:post]['location']
- 
+
     @weather = get_weather(post)
  
     "#{@weather}"
