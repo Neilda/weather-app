@@ -1,5 +1,14 @@
-
+<style>
+	body {background-image: url("map.png");
+	}
+</style>
+<div class = "parent">
+<div class="floater"></div>
+<div class = "child">
 <form method="post" action="/weather">
-    Enter your location: <input type="text" name="post[location]" />
-    <input type="submit" name="Search" />
+    <h1 id = "location">Where are you?</h1> 
+    <input id="form_input"type="text" name="post[location]" placeholder="Zip Code"/>
+    <input id="submit_button" type="submit" name="Search" value="SUBMIT"/>
 </form>
+</div>
+</div>
